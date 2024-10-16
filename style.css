@@ -1,0 +1,106 @@
+@font-face { font-family: sevensegment; src: url('resources/fonts/7segment.ttf'); } 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #efcf9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    width: 40%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #1a363655;
+}
+
+#display-formula {
+    border-radius: 5px 5px 0 0;
+    height: 7%;
+    background-color:#1A3636;
+    text-align: end;
+    color: #D6BD98;
+    padding: 0.1rem 1rem 0 0;
+    font-family: sevensegment;
+    font-size: 1.5rem;
+}
+
+#display {
+    height: 7%;
+    background-color:#1A3636;
+    text-align: end;
+    color: #D6BD98;
+    padding: 0 1rem 0 0;
+    font-family: sevensegment;
+    font-size: 2.5rem;
+}
+
+#buttons {
+    display: grid;
+    height: 86%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 0.2rem;
+    column-gap: 0.2rem;
+    background-color: #40534C;
+    padding: 0.2rem;
+    border-radius: 0 0 5px 5px;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    color: #D6BD98;
+    font-size: 2rem;
+}
+
+.dark {
+    background-color: #1A3636;
+    box-shadow: 0.5px 2px 1px #1a363655;
+}
+
+.dark:hover {
+    background-color: #677d6a55;
+}
+
+.dark:active {
+    box-shadow: 0 0 1px #1a363655;
+}
+
+.light {
+    background-color: #677D6A;
+    box-shadow: 0.5px 2px 1px #677d6a55;
+}
+
+.light:hover {
+    background-color: #1a363655;
+}
+
+.light:active{
+    box-shadow: 0 0 1px #677d6a55;
+}
+
+
+.equals {
+    background-color: #D6BD98;
+    color: #1A3636;
+    box-shadow: 0.5px 2px 1px rgba(103, 125, 106, 0.94)
+}
+
+.equals:hover {
+    background-color: #efcf9e;
+    color: #1A3636;
+}
+
+.equals:active {
+    box-shadow: 0 0 1px rgba(103, 125, 106, 0.94)
+}
+
